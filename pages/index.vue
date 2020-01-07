@@ -2,7 +2,7 @@
   <div class="carousel-wrapper">
     <div v-swiper:mySwiper="options">
       <div class="swiper-wrapper">
-        <div v-for="i in 5" :key="i" class="img-warpper swiper-slide">
+        <div v-for="i in 5" :key="i" class="img-wrapper swiper-slide">
           <img :src="`https://picsum.photos/200/100?random=${i}`" />
         </div>
       </div>
@@ -38,7 +38,7 @@ export default {
     justify-content: center;
     align-items: center;
   }
-  .img-warpper img {
+  .img-wrapper img {
     margin: auto;
     width: 200px;
     height: 100px;
