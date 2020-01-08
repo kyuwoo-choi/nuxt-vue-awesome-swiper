@@ -3,7 +3,7 @@
     <div v-swiper:mySwiper="options">
       <div class="swiper-wrapper">
         <div v-for="i in 5" :key="i" class="img-wrapper swiper-slide">
-          <img :src="`https://picsum.photos/200/100?random=${i}`" />
+          <img :src="`./${i}-200x100.jpg`" />
         </div>
       </div>
       <div class="swiper-pagination swiper-pagination-bullets"></div>
