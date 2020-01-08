@@ -6,7 +6,6 @@
           <img :src="`./${i}-200x100.jpg`" />
         </div>
       </div>
-      <div class="swiper-pagination swiper-pagination-bullets"></div>
     </div>
   </div>
 </template>
@@ -17,10 +16,7 @@ export default {
     return {
       options: {
         slidesPerView: 3,
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination'
-        }
+        loop: true
       }
     }
   }
@@ -43,9 +39,6 @@ export default {
     width: 200px;
     height: 100px;
     background-image: linear-gradient(gray 100%, transparent 0);
-  }
-  ::v-deep.swiper-pagination-bullet-active {
-    background-color: black;
   }
 }
 </style>
